@@ -1,0 +1,279 @@
+<!-- <app-nav-bar></app-nav-bar> -->
+<!-- <app-footer></app-footer> -->
+<div class="collection-area">
+    <div class="collection-detail" *ngIf="(isLoading===false) && (collection_array.length > 0) && (isDataRetrieved===true) ">
+        <div class="collection-heading">
+            {{collection_heading}}
+        </div>
+        <div class="collection-detail" *ngIf="(isLoading===false) && (collection_array.length > 0) && (isDataRetrieved===true) ">
+            <!-- We all want to make our favourite people feel special, and while some of us can express it through our
+            words, the rest of us do it with gifts. Gifting is a great way to express your love and feelings to your
+            friends and family, and hence, NurseryLive has a wide range of gifting options.
+
+            All you need to do is place your order on our website and wait till we deliver them to your friends and
+            family in a stress-free manner. Not only that, but we also specialize in corporate gifts, bulk gifts, and
+            event gifts. We can also customize and offer branding options according to your needs. -->
+            {{collection_desc}}
+        </div>
+    </div>
+    <div class="collection-content" *ngIf="(isLoading===false) && (collection_array.length > 0) ">
+
+        <div class="collection-box "  *ngFor="let dta of collection_array" (click)='goToItemPage(dta.id)'>
+            <div class="collection-image">
+                <img src={{dta.photo}} alt="">
+            </div>
+            <div class="collection-data-flex">
+                <div class="collection-data">
+                    <div class="collection-first-bar">
+                        <div class="collection-price">
+                            ₹ {{dta.mrp}}
+                        </div>
+                        <div class="collection-alligner">
+                            <div class="collection-spacer"></div>
+                            <div class="collection-wishlist">
+                                <a>
+                                    <!-- <i class="far fa-heart"></i> -->
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
+                            <div class="collection-spacer"></div>
+                        </div>
+                    </div>
+                    <div class="collection-name">
+                        {{dta.name}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="collection-box " (click)="goToItemPage(1)">
+            <div class="collection-image">
+                <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-gifts-happy-2-layer-lucky-bamboo-for-happy-fathers-day-16968916631692_295x295.jpg?v=1601351470"
+                    alt="">
+            </div>
+            <div class="collection-data-flex">
+                <div class="collection-data">
+                    <div class="collection-first-bar">
+                        <div class="collection-price">
+                            ₹ 149
+                        </div>
+                        <div class="collection-alligner">
+                            <div class="collection-spacer"></div>
+                            <div class="collection-wishlist">
+
+                                <a>
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="collection-spacer"></div>
+                        </div>
+                    </div>
+                    <div class="collection-name">
+                        Brinjal light purple long
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collection-box " (click)="goToItemPage(1)">
+            <div class="collection-image">
+                <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-gifts-happy-2-layer-lucky-bamboo-for-happy-fathers-day-16968916631692_295x295.jpg?v=1601351470"
+                    alt="">
+            </div>
+            <div class="collection-data-flex">
+                <div class="collection-data">
+                    <div class="collection-first-bar">
+                        <div class="collection-price">
+                            ₹ 149
+                        </div>
+                        <div class="collection-alligner">
+                            <div class="collection-spacer"></div>
+                            <div class="collection-wishlist">
+
+                                <a>
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="collection-spacer"></div>
+                        </div>
+                    </div>
+                    <div class="collection-name">
+                        Brinjal light purple long
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collection-box " (click)="goToItemPage(1)">
+            <div class="collection-image">
+                <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-gifts-happy-2-layer-lucky-bamboo-for-happy-fathers-day-16968916631692_295x295.jpg?v=1601351470"
+                    alt="">
+            </div>
+            <div class="collection-data-flex">
+                <div class="collection-data">
+                    <div class="collection-first-bar">
+                        <div class="collection-price">
+                            ₹ 149
+                        </div>
+                        <div class="collection-alligner">
+                            <div class="collection-spacer"></div>
+                            <div class="collection-wishlist">
+
+                                <a>
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="collection-spacer"></div>
+                        </div>
+                    </div>
+                    <div class="collection-name">
+                        Brinjal light purple long
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collection-box " (click)="goToItemPage(1)">
+            <div class="collection-image">
+                <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-gifts-happy-2-layer-lucky-bamboo-for-happy-fathers-day-16968916631692_295x295.jpg?v=1601351470"
+                    alt="">
+            </div>
+            <div class="collection-data-flex">
+                <div class="collection-data">
+                    <div class="collection-first-bar">
+                        <div class="collection-price">
+                            ₹ 149
+                        </div>
+                        <div class="collection-alligner">
+                            <div class="collection-spacer"></div>
+                            <div class="collection-wishlist">
+
+                                <a>
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="collection-spacer"></div>
+                        </div>
+                    </div>
+                    <div class="collection-name">
+                        Brinjal light purple long
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collection-box " (click)="goToItemPage(1)">
+            <div class="collection-image">
+                <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-gifts-happy-2-layer-lucky-bamboo-for-happy-fathers-day-16968916631692_295x295.jpg?v=1601351470"
+                    alt="">
+            </div>
+            <div class="collection-data-flex">
+                <div class="collection-data">
+                    <div class="collection-first-bar">
+                        <div class="collection-price">
+                            ₹ 149
+                        </div>
+                        <div class="collection-alligner">
+                            <div class="collection-spacer"></div>
+                            <div class="collection-wishlist">
+
+                                <a>
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="collection-spacer"></div>
+                        </div>
+                    </div>
+                    <div class="collection-name">
+                        Brinjal light purple long
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collection-box " (click)="goToItemPage(1)">
+            <div class="collection-image">
+                <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-gifts-happy-2-layer-lucky-bamboo-for-happy-fathers-day-16968916631692_295x295.jpg?v=1601351470"
+                    alt="">
+            </div>
+            <div class="collection-data-flex">
+                <div class="collection-data">
+                    <div class="collection-first-bar">
+                        <div class="collection-price">
+                            ₹ 149
+                        </div>
+                        <div class="collection-alligner">
+                            <div class="collection-spacer"></div>
+                            <div class="collection-wishlist">
+
+                                <a>
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="collection-spacer"></div>
+                        </div>
+                    </div>
+                    <div class="collection-name">
+                        Brinjal light purple long
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collection-box " (click)="goToItemPage(1)">
+            <div class="collection-image">
+                <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-gifts-happy-2-layer-lucky-bamboo-for-happy-fathers-day-16968916631692_295x295.jpg?v=1601351470"
+                    alt="">
+            </div>
+            <div class="collection-data-flex">
+                <div class="collection-data">
+                    <div class="collection-first-bar">
+                        <div class="collection-price">
+                            ₹ 149
+                        </div>
+                        <div class="collection-alligner">
+                            <div class="collection-spacer"></div>
+                            <div class="collection-wishlist">
+
+                                <a>
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="collection-spacer"></div>
+                        </div>
+                    </div>
+                    <div class="collection-name">
+                        Brinjal light purple long
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collection-box " (click)="goToItemPage(1)">
+            <div class="collection-image">
+                <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-gifts-happy-2-layer-lucky-bamboo-for-happy-fathers-day-16968916631692_295x295.jpg?v=1601351470"
+                    alt="">
+            </div>
+            <div class="collection-data-flex">
+                <div class="collection-data">
+                    <div class="collection-first-bar">
+                        <div class="collection-price">
+                            ₹ 149
+                        </div>
+                        <div class="collection-alligner">
+                            <div class="collection-spacer"></div>
+                            <div class="collection-wishlist">
+
+                                <a>
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="collection-spacer"></div>
+                        </div>
+                    </div>
+                    <div class="collection-name">
+                        Brinjal light purple long
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="empty-collection" *ngIf="(isLoading===false) && (collection_array.length===0) && (isDataRetrieved===true)  ">
+        <div><i class="far fa-frown-open"></i> Something went wrong!</div>
+    </div>
+    <div class="loading" *ngIf="(isDataRetrieved===false) || (isLoading===true) ">
+        <app-loader></app-loader>
+    </div>
+</div>

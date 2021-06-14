@@ -1,0 +1,70 @@
+nav {
+  color: white;
+  height: fit-content;
+  font-family: 'Cabin', sans-serif;
+  /* padding-bottom: 20px; */
+}
+
+.HeadingNav {
+  /* background-color: rgb(69, 190, 53); */
+  background-color: rgb(18, 95, 8);
+  height: 55px;
+  /* width:100vw; */
+  padding: 7px 17px 10px 15px;
+  font-family: 'Cabin Condensed', sans-serif;
+  display: flex;
+}
+
+.logo {
+  background: url('src\assets\Logo.png');
+  width: 40px;
+  height: 40px;
+  /* padding: 10px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 40px;
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+.heading {
+  /* width:fit-content; */
+  font-size: 2em;
+  padding-left: 9px ;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.icons {
+  width: max-content;
+  height: max-content;
+}
+
+.icons i {
+  font-size: 1.5em;
+  padding: 10px 8px;
+  cursor: pointer;
+  color: white;
+  /* color: #B0F890; */
+  vertical-align: middle;
+}
+
+.icons i:hover {
+  /* font-size:2.3em;
+  padding: 14px 5px; */
+  transform: scale(1.3);
+  transition: all 0.5s ease;
+  color: #B0F890;
+}
+
+@media (max-width:750px) {
+
+  .icons i {
+    font-size: 1.6em;
+  }
+}

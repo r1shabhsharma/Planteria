@@ -1,0 +1,186 @@
+<!-- <app-nav-bar></app-nav-bar> -->
+<!-- <router-outlet></router-outlet> -->
+
+<div class="homePage">
+    <div class="mainImage"> </div>
+
+    <!-- Feature bar starts  -->
+    <div class="feature_bar col-lg-10 col-md-12 col-sm-12 col-xl-10">
+        <div class="feature">
+            <div class="feature_icon">
+                <div class="feature_spacer"></div>
+                <i class="fa fa-truck" aria-hidden="true"></i>
+                <div class="feature_spacer"></div>
+            </div>
+            <div class="feature_desc">
+                <div class="feature_spacer"></div>
+                <div>
+                    Fast delivery with extra care to deliver healthy plants.
+                </div>
+                <div class="feature_spacer"></div>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature_icon">
+                <div class="feature_spacer"></div>
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <div class="feature_spacer"></div>
+            </div>
+            <div class="feature_desc">
+                <div class="feature_spacer"></div>
+                <div>
+                    We are available 7 days a week.
+                </div>
+                <div class="feature_spacer"></div>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature_icon">
+                <div class="feature_spacer"></div>
+                <i class="fa fa-medkit" aria-hidden="true"></i>
+                <div class="feature_spacer"></div>
+            </div>
+            <div class="feature_desc">
+                <div class="feature_spacer"></div>
+                <div>
+                    Consult to our online plant doctors and give them a better life.
+                </div>
+                <div class="feature_spacer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature bar starts  -->
+
+    <div class="best-selling-area">
+        <app-you-might-like></app-you-might-like>
+    </div>
+
+    <!-- Grid area starts  -->
+    <section class="option_grid_section">
+        <div class="optionGrid">
+            <div class=" option_col_left ">
+                <div class="option_box_padder">
+                    <!-- <a routerLink="/collection"> -->
+                    <div class=" option_Living_Gift " id="option_Living_Gift" (click)="loadCollection('shrubs')">
+                        <div class="option_grid_overlay">
+                            <div class="optiongrid_spacer"></div>
+                            A Living Gift
+                            <div class="optiongrid_spacer"></div>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+                <div class="show_when_big" style="width:100%;height:10px;"></div>
+                <div class="option_row ">
+                    <div class="optiongrid_spacer"></div>
+                    <!-- <div class="optiongrid_alligner"> -->
+                    <div class="optiongrid_inner_row">
+                        <div class="option_box_padder">
+                            <div class="option_Soil" (click)="loadCollection('soil')">
+                                <div class="option_grid_overlay">
+                                    <div class="optiongrid_spacer"></div>
+                                    Soil
+                                    <div class="optiongrid_spacer"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="show_when_big" style="width:20px;height:100%;"></div>
+
+                        <div class="option_box_padder">
+
+                            <!-- <div class="optiongrid_spacer"></div> -->
+                            <div class="option_Ceramic" (click)="loadCollection('ceramic')">
+                                <div class="option_grid_overlay">
+                                    <div class="optiongrid_spacer"></div>
+                                    Ceramic
+                                    <div class="optiongrid_spacer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <div class="optiongrid_spacer"></div>
+                </div>
+            </div>
+            <div class="show_when_big" style="width:10px;height:100%;"></div>
+            <div class="option_col_right ">
+                <div class="option_box_padder">
+                    <div class="option_Succulent" (click)="loadCollection('succulent')">
+                        <div class="option_grid_overlay">
+                            <div class="optiongrid_spacer"></div>
+                            Succulent
+                            <div class="optiongrid_spacer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width:100%; height:20px"></div>
+                <div class="option_box_padder">
+                    <div class="option_Bonsai" (click)="loadCollection('bonsai')">
+                        <div class="option_grid_overlay">
+                            <div class="optiongrid_spacer"></div>
+                            Bonsai
+                            <div class="optiongrid_spacer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width:100%; height:20px"></div>
+                <div class="option_box_padder">
+                    <div class="option_Seeds" (click)="loadCollection('seeds')">
+                        <div class="option_grid_overlay">
+                            <div class="optiongrid_spacer"></div>
+                            Seeds
+                            <div class="optiongrid_spacer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Grid area ends  -->
+
+    <!-- Learn with us section starts  -->
+    <section class="learn_with_us">
+        <div class="row">
+            <div class="learn_spacer"></div>
+            <div class="learn_main_body">
+                <h2>Learn With Us</h2>
+                <div class="learn_options">
+                    <div class="learn_option card">
+                        <div class="learn_heading">
+                            Live Consultation
+                        </div>
+                        <div class="learn_content">
+                            <div class="learn_spacer"></div>
+                            <div> 30 mins video consultation with gardening experts. </div>
+                            <div class="learn_highlight">Worth Rs149 </div>
+                            <div class="learn_spacer"></div>
+                        </div>
+                        <button class="learn_button btn btn-dark">
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="learn_option card">
+                        <div class="learn_heading">
+                            Gardening Workshops
+                        </div>
+                        <div class="learn_content">
+                            Workshops for you to learn cultivating plants and make your garden a better place.
+                            <div class="learn_highlight">Starting @ Rs249 </div>
+                        </div>
+                        <button class="learn_button btn btn-dark">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="learn_spacer"></div>
+        </div>
+    </section>
+    <!-- Learn with us section ends  -->
+
+    <!-- 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    -->
+
+</div>
+<!-- <app-footer></app-footer> -->

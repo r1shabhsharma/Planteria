@@ -1,0 +1,141 @@
+/* .you-might-area {
+  width: 100vw;
+} */
+
+.ym-box {
+  width: 240px;
+  max-width: 240px;
+  margin: 15px 7px;
+  box-shadow: 1px 2px 10px 0px rgb(0, 0, 0, 0.25);
+  padding: 15px;
+  /* transition: all 0.5s ease 0s; */
+}
+
+.ym-image {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+.ym-image img {
+  width: 210px;
+  height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.ym-data-flex {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.ym-data {
+  flex: 1;
+  padding-top: 15px;
+}
+
+.ym-price {
+  font-size: 1.7em;
+  font-weight: 500;
+  color: rgb(18, 95, 8);
+}
+
+.ym-alligner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .collection-name { */
+/* font-size: 17px; */
+/* } */
+
+.ym-spacer {
+  flex: 1;
+}
+
+.ym-box:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  /* background-color: #d4fdc4; */
+}
+
+.ym-wishlist {
+  width: fit-content;
+
+}
+
+.ym-wishlist i {
+  color: rgb(18, 95, 8);
+  font-size: 25px;
+  padding-top: 5px;
+}
+
+.ym-first-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ym-heading {
+  font-weight: 500;
+  font-size: 2.3em;
+}
+
+/* 
+@media (max-width:1200px) {
+  .collection-image img {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media (max-width:1230px) {
+  .collection-area {
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width:1000px) {
+  .collection-box {
+    width: fit-content;
+  }
+
+}
+
+@media (max-width:800px) {
+  .collection-price {
+    font-size: 1.35em;
+    font-weight: 500;
+    color: rgb(18, 95, 8);
+  }
+
+}
+
+@media (max-width:770px) {
+  .collection-box {
+    width: calc(33.333% - 15px);
+  }
+
+
+  .collection-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+@media (max-width:680px) {
+  .collection-area {
+    padding: 50px 10px;
+  }
+
+  .collection-box {
+    width: calc(50% - 15px);
+  }
+} */

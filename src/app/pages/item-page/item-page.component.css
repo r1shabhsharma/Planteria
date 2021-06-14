@@ -1,0 +1,150 @@
+.item-area {
+  padding: 50px 120px;
+  width: 100%;
+  /* height: 600px; */
+}
+
+.item-data-alligner {
+  display: flex;
+  justify-content: center;
+}
+
+.item-pic {
+  width: 400px;
+  height: 400px;
+  /* width:fit-content; */
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* height: fit-content; */
+  border: 8px solid white;
+  /* padding:7px; */
+}
+
+.item-pic-border {
+  /* background-color: #B0F890; */
+  background-color: rgb(18, 95, 8);
+  width: fit-content;
+  height: fit-content;
+  padding: 14px;
+  /* border: 8px solid #B0F890; */
+}
+
+/* .itme-pic img{
+    width:100%;
+    height: 100%;
+} */
+
+.item-data {
+  margin-left: 50px;
+}
+
+.item-name {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.item-mrp {
+  font-weight: 500;
+  font-size: 1.4em;
+  color: rgb(22, 122, 9);
+}
+
+.item-mrp-desc {
+  margin-top: 10px;
+}
+
+.item-offer-area {
+  background-color: #B0F890;
+  /* border:7px solid rgb(18, 95, 8); */
+  width: 360px;
+  padding: 8px 15px;
+}
+
+.item-offer-heading {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.item-add-cart {
+  margin-top: 30px;
+  display: flex;
+}
+
+.item-add-cart input {
+  width: 100px;
+  height: 38px;
+  padding-left: 6px;
+}
+
+.item-add-cart button {
+  background-color: rgb(18, 95, 8);
+  color: white;
+  margin-left: 40px;
+}
+
+.item-desc {
+  /* margin: 60px 30px 0 30px; */
+  /* margin: auto; */
+  margin-top: 60px;
+  width: fit-content;
+  margin-bottom: 60px;
+}
+
+.item-data-spacer {
+  display: none;
+}
+
+
+
+@media (max-width:1100px) {
+  .item-area {
+    padding: 50px 60px;
+  }
+}
+
+@media (max-width:880px) {
+  .item-pic {
+    width: 300px;
+    height: 300px;
+
+  }
+}
+
+@media (max-width:786px) {
+  .item-data-alligner {
+    display: block;
+  }
+
+  .item-pic-border {
+    padding: 8px;
+    margin: auto;
+  }
+
+  .item-data {
+    margin-top: 30px;
+  }
+
+  .item-data--1,
+  .item-data--2 {
+    flex: 1;
+    display: block;
+  }
+
+  .item-data-spacer {
+    display: block;
+    width: 20px;
+  }
+
+  .item-data {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+}
+
+@media (max-width:700px) {
+  .item-data {
+    display: block;
+  }
+}

@@ -1,0 +1,11 @@
+.main-page{
+    /* width: 100vw; */
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+.page_content{
+    width:100%;
+    flex: 1;
+}

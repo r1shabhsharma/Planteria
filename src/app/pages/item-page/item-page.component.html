@@ -1,0 +1,68 @@
+<div class="item-area">
+    <div class="item-data-alligner" *ngIf="isDataRetrieved===true && isLoading===false">
+        <div class="item-pic-border">
+            <!-- <div class="item-pic" style="background:url('https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-gifts-happy-2-layer-lucky-bamboo-for-happy-fathers-day-16968916631692_295x295.jpg?v=1601351470'); background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;"> -->
+            <!-- <div class="item-pic" style="background:url({{item_photo}}); ">
+            </div> -->
+            <img class="item-pic" src="{{item_photo}}" alt="">
+        </div>
+        <div class="item-data">
+            <div class="item-data--1">
+                <div class="item-name">{{item_name}}</div>
+                <div class="item-mrp">₹ {{item_mrp}}</div>
+                <div class="item-mrp-desc">(MRP Inclusive of all taxes)
+                    <br>
+                    <ul>
+                        <li> Shipping charge Rs 40 </li>
+                        <li> Dispatch in 5-8 days </li>
+                        <li> Country of origin: India </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item-data-spacer"></div>
+            <div class="item-data--2">
+                <div class="item-offer-area">
+                    <div class="item-offer-heading">Today's Offer</div>
+                    <ul style="margin-bottom:10px;">
+                        <li> 20% Cashback</li>
+                        <li>Buy 3 get 1 free</li>
+                    </ul>
+                    <span style="font-size: 14px; font-weight:500; "> *check for the offers while paying</span>
+                </div>
+                <div class="item-add-cart">
+                    <form [formGroup]="qtyForm" (ngSubmit)="addToCart()">
+                        <input type="number" name="qty"  formControlName="qty" placeholder="Quantity"
+                        min=1>
+                        <button class="btn" type="submit">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-desc" *ngIf="isDataRetrieved===true && isLoading===false">
+        <h2>Description</h2>
+        <div>
+            <!-- This Fathers Day celebrates all the things that were made possible because of Dad by gifting him Lucky
+            bamboo in a beautiful plastic pot <br>
+            <ul>
+                <li> Bring good fortune and positive vibes.</li>
+                <li> Best indoor tabletop plant.</li>
+                <li> Low maintenance plant.</li>
+                <li> In this gift pack you will get beautiful lucky bamboo with plastic pot.</li>
+                <li> Lucky bamboo requires little maintenance and can thrive in minimal water and little to no sunlight.
+                </li>
+                <li> You can keep this plant in air-conditioned rooms also.</li>
+                <li> Lucky bamboo symbolizes happy life making it a perfect gift for any occasion.</li>
+            </ul> -->
+            {{item_desc}}
+        </div>
+    </div>
+    <div *ngIf="isDataRetrieved===false || isLoading===true">
+        <app-loader></app-loader>
+    </div>
+    <div>
+        <app-you-might-like></app-you-might-like>
+    </div>
+</div>

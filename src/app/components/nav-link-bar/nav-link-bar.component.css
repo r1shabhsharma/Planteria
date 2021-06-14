@@ -1,0 +1,28 @@
+.nav-link-bar {
+  width: 100%;
+  background-color: #B0F890;
+  /* height: 30px; */
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+
+.nav-option {
+  font-size: 1.2em;
+  padding: 3px 10px;
+  /* height:20px; */
+  /* background-color: blue; */
+}
+
+.nav-option a {
+  text-decoration: none;
+  color: rgb(18, 95, 8);
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.nav-option a:hover {
+  font-size:1.12em;
+}

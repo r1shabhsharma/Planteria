@@ -1,0 +1,37 @@
+<div class="nav-link-bar">
+    <div class="nav-option" *ngIf="router.url !== '/'">
+        <a routerLink="/">
+            Home
+        </a>
+    </div>
+    <div class="nav-option" *ngIf="router.url !== '/collection?page=shrubs'">
+        <a (click)="loadCollection('shrubs')">
+            Shrubs
+        </a>
+    </div>
+    <div class="nav-option" *ngIf="router.url !== '/collection?page=bonsai'">
+        <a (click)="loadCollection('bonsai')">
+            Bonsai
+        </a>
+    </div>
+    <div class="nav-option" *ngIf="router.url !== '/collection?page=succulent'">
+        <a (click)="loadCollection('succulent')">
+            Succulent
+        </a>
+    </div>
+    <div class="nav-option" *ngIf="router.url !== '/collection?page=soil'">
+        <a (click)="loadCollection('soil')">
+            Soil
+        </a>
+    </div>
+    <div class="nav-option" *ngIf="router.url !== '/collection?page=seeds'">
+        <a (click)="loadCollection('seeds')">
+            Seeds
+        </a>
+    </div>
+    <div class=" nav-option" *ngIf="router.url !== '/collection?page=ceramic'">
+        <a (click)="loadCollection('ceramic')">
+            Ceramic
+        </a>
+    </div>
+</div>

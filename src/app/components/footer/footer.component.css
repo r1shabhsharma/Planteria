@@ -1,0 +1,97 @@
+.footerMain {
+  width: 100%;
+  height: fit-content;
+  background-color: black;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(206, 206, 206);
+}
+
+.logoAndSocialMedia {
+  text-align: center;
+  /* width: 50vw; */
+}
+
+.logo {
+  background: url('src\assets\Logo.png');
+  width: 100px;
+  height: 100px;
+  /* padding: 10px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50px;
+  margin: auto;
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 2em;
+}
+
+.social {
+  font-size: 1.9em;
+  /* display: flex; */
+  text-align: center;
+}
+
+.social i {
+  margin: 2px 5px;
+  cursor: pointer;
+}
+
+.ContactDetails {
+  width: fit-content;
+}
+
+.subscribeInput {
+  width: 300px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  margin-top: 10px;
+}
+
+.subscribeInput input {
+  height: 32px;
+}
+
+.subscribeInput button {
+  height: 32px;
+  padding-top: 3px;
+  margin-left: 15px;
+  margin-top: -3px;
+  background-color: #B0F890;
+  color:black;
+  font-weight: 600;
+  border: none;
+}
+
+.phoneNmail i {
+  margin-right: 7px;
+}
+
+@media only screen and (max-width:600px) {
+  .footerMain {
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    padding: 50px 30px;
+    display: list-item;
+    /* justify-content: space-evenly; */
+    color: rgb(206, 206, 206);
+  }
+
+  .logoAndSocialMedia {
+    margin: auto;
+  }
+
+  .ContactDetails {
+    margin: auto;
+    width: 70vw;
+    margin-top: 30px;
+  }
+}

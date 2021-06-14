@@ -1,0 +1,461 @@
+.mainImage {
+  /* width: 70%; */
+  /* height: 350px; */
+  width: 860px;
+  height: 515px;
+  margin: auto;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url('src\assets\Planteria.png');
+  background-size: 110%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width:800px) and (max-width:1000px) {
+  .mainImage {
+    width: 650px;
+    height: 400px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url('src\assets\Planteria.png');
+    background-size: 110%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width:1000px) {
+  .mainImage {
+    /* width: 900px;
+    height: 550px; */
+    width: 860px;
+    height: 515px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url('src\assets\Planteria.png');
+    background-size: 110%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .mainImage {
+    width: 85vw;
+    height: 50vw;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url('src\assets\Planteria.png');
+    background-size: 110%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.bg-img {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Feature class  */
+
+.feature_bar {
+  background-color: rgb(209, 209, 209);
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  /* padding: 15px; */
+}
+
+.feature {
+  /* height: 100px; */
+  /* background-color: black; */
+  width: fit-content;
+  margin: 10px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  /* border:4px solid #4d4d4d; */
+  border-radius: 10px;
+}
+
+.feature_icon {
+  font-size: 2.6em;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #4d4d4d;
+}
+
+.feature_desc {
+  padding-left: 6px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 1.1em; */
+  /* font-weight:600; */
+}
+
+.feature_spacer {
+  flex: 1;
+}
+
+@media (max-width:1000px) {
+  .feature_icon {
+    font-size: 2.4em;
+  }
+
+  .feature_desc {
+    font-size: 1.03em;
+  }
+}
+
+@media (max-width:750px) {
+  .feature {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .feature_bar {
+    height: fit-content;
+  }
+}
+
+/* Option Grid  */
+
+.option_grid_section {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.optionGrid {
+  width: 80%;
+  max-width: 800px;
+  height: fit-content;
+  /* background-color: blue; */
+  /* background-color: rgb(221, 221, 221);  */
+  background-color: rgb(18, 95, 8);
+  /* background-color: rgb(148, 214, 139); */
+  /* border: 5px solid rgb(18, 95, 8); */
+  display: flex;
+  justify-content: space-around;
+  padding: 22px;
+  margin: auto;
+  margin-top: 40px;
+  /* flex-wrap: wrap; */
+}
+
+@media (max-width:1000px) {
+  .optionGrid {
+    width: 100%;
+  }
+}
+
+
+.option_col_left {
+  /* padding: 10px; */
+  /* background-color: black; */
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.option_Living_Gift {
+  /* background-color: brown; */
+  height: 400px;
+  /* margin: 20px; */
+  background: url("assets/images/home-page/Living Gift.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 5px solid rgb(18, 95, 8); */
+}
+
+.option_Soil {
+  /* width:40%; */
+  flex: 1;
+  height: 180px;
+  /* padding: 10% 10%; */
+  /* margin: 20px; */
+  background: url("assets/images/home-page/soil.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width:40%; */
+  /* border: 5px solid rgb(18, 95, 8); */
+
+}
+
+.option_Ceramic {
+  background: url("assets/images/home-page/ceramic.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width:40%; */
+  flex: 1;
+  height: 180px;
+  /* padding: 10% 10%; */
+  /* margin: 20px; */
+  /* border: 5px solid rgb(18, 95, 8); */
+
+}
+
+.option_col_right {
+  /* background-color: cyan; */
+  /* width:40%; */
+  flex: 1;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* padding: 20px; */
+}
+
+
+.option_Seeds {
+  flex: 1;
+  height: 100%;
+  /* margin: 10px; */
+  background: url("assets/images/home-page/seeds.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 5px solid rgb(18, 95, 8); */
+
+}
+
+.option_Bonsai {
+  flex: 1;
+  height: 100%;
+  /* margin: 10px; */
+  background: url("assets/images/home-page/Bonsai.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 5px solid rgb(18, 95, 8); */
+
+}
+
+.option_Succulent {
+  flex: 1;
+  height: 100%;
+  /* margin: 10px; */
+  background: url("assets/images/home-page/succulent.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 5px solid rgb(18, 95, 8); */
+
+}
+
+.option_row {
+  height: fit-content;
+  width: 100%;
+  /* background-color: #4d4d4d; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+.optiongrid_alligner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.optiongrid_spacer {
+  flex: 1;
+}
+
+.optiongrid_inner_row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.option_grid_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.44);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.option_box_padder {
+  width: 100%;
+  height: 100%;
+  padding: 7px;
+  background-color: white;
+}
+
+.option_Living_Gift :hover,
+.option_Bonsai :hover,
+.option_Ceramic :hover,
+.option_Seeds :hover,
+.option_Soil :hover,
+.option_Succulent :hover {
+  /* background-color: rgba(148, 214, 139,0);  */
+  /* box-shadow: inset 0 0 0 2000px rgb(148, 214, 139,0.6); */
+  box-shadow: inset 0 0 0 2000px rgba(100, 192, 90, 0.6);
+  font-size: 2.6em;
+  /* color:rgb(18, 95, 8); */
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+@media (max-width:770px) {
+
+  .optionGrid {
+    width: 100%;
+    height: fit-content;
+    background-color: none;
+    display: block;
+    background-color: white;
+  }
+
+  .option_Living_Gift,
+  .option_Bonsai,
+  .option_Ceramic,
+  .option_Soil,
+  .option_Succulent,
+  .option_Seeds {
+    width: 80vw;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    /* background-color: chartreuse; */
+
+  }
+
+
+  .option_row,
+  .optiongrid_inner_row,
+  .option_col_right,
+  .option_col_left {
+    height: fit-content;
+    width: 100%;
+    display: block;
+    background-color: white;
+    padding: 0px;
+  }
+
+  .show_when_big {
+    display: none;
+  }
+}
+
+
+/* Learn with us section  */
+
+.learn_with_us {
+  /* background-color: aquamarine; */
+  /* background-color: rgb(209, 209, 209); */
+  background-color: #B0F890;
+  height: fit-content;
+  padding: 40px 90px 50px 90px;
+}
+
+.learn_main_body {
+  /* display:flex; */
+  /* justify-content: space-around; */
+  max-width: 950px;
+}
+
+.learn_main_body h2 {
+  text-align: center;
+}
+
+.learn_options {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.learn_option {
+  flex: 1;
+  margin: 20px;
+  padding: 15px 10px 20px 10px;
+  box-shadow: 1px 2px 10px 0px rgb(0, 0, 0, 0.25);
+  /* padding-bottom:20px; */
+  /* height: 200px; */
+}
+
+.learn_heading {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.learn_content {
+  /* flex:1; */
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.learn_highlight {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+.learn_spacer {
+  flex: 1;
+}
+
+.learn_button {
+  width: 100px;
+  margin: auto;
+  /* background-color: rgb(18, 95, 8); */
+  font-weight: 500;
+}
+
+
+@media (max-width:660px) {
+  .learn_options {
+    display: block;
+  }
+}
+
+
+.best-selling-area{
+  padding:50px 130px;
+}

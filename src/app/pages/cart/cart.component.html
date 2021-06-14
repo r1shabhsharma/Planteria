@@ -1,0 +1,75 @@
+<div class="cart-main">
+    <div *ngIf="isLoading === true || isDataRetrieved===false">
+        <app-loader></app-loader>
+    </div>
+    <div class="cart-heading">Your Cart</div>
+    <div class="cart-box">
+        <div class="cart-item" *ngFor="let dta of CartItemArray">
+            <div class="cart-item-image">
+                <img src="{{dta.photo}}" alt="">
+            </div>
+            <div class="cart-item-data">
+                <div class="cart-item-desc card-item-alligner">
+                    <div class="card-spacer"></div>
+                    <div class="cart-item-name">
+                        {{dta.name}}
+                    </div>
+                    <div class="cart-item-mrp">
+                        ₹ {{dta.mrp}}
+                    </div>
+                    <div class="card-spacer"></div>
+                </div>
+                <div class="cart-item-qty card-item-alligner">
+                    <div class="card-spacer"></div>
+                    <div class="cart-item-qty-row">
+                        <div>
+                            <!-- <form [formGroup]="qtyForm" (change)="calcTotalPrice()"> -->
+                            <input type="number" name="qty" class="item-qty"  placeholder="Quantity" min=1
+                                value={{dta.qty}} #qntty>
+                            <!-- </form> -->
+                        </div>
+                        <div class="cart-item-price">
+                            ₹ {{dta.qty*dta.mrp}}
+                        </div>
+                        <div class="cart-item-cancel card-item-alligner">
+                            <div class="card-spacer"></div>
+                            <a (click)="removeItem()">
+                                <i class="fas fa-times-circle"></i>
+                            </a>
+                            <div class="card-spacer"></div>
+                        </div>
+                    </div>
+                    <div class="card-spacer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="MoneySection">
+        <div class="OfferSection card-item-alligner">
+            <div class="card-spacer"></div>
+            <div class="Offerheading">Today's Offer: </div>
+            <div class="Offerdesc"> Flat ₹200 off on purchase above ₹1000! </div>
+            <div class="OfferBtn" *ngIf="isCouponApplied===false">
+                <button class="btn" (click)="applyCoupon()">Apply Now</button>
+            </div>
+            <div class="OfferUseddesc" *ngIf="isCouponApplied===true">
+                <i class="fas fa-check-circle"></i>  Offer vouchers used!
+            </div>
+            <div class="card-spacer"></div>
+        </div>
+        <div class="BillingSection card-item-alligner">
+            <div class="card-spacer"></div>
+            <!-- <div class="BillingSection"> -->
+            <div class="total">Total : ₹ {{TotalPrice | number:'1.0':'en-US' }}</div>
+            <!-- </div> -->
+            <!-- <div class="BillingInfoSection"> -->
+            <div class="shippingInfo">(Shipping charges will be added <br>after adding address details.)</div>
+            <!-- </div> -->
+            <div class="ProceedButton">
+                <button class="btn">
+                    Proceed
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<!-- <div *ngIf="router.url === '/'"> -->
+<!-- <app-home-page></app-home-page> -->
+<!-- </div> -->
+
+<!-- <div *ngIf= "router.url === '/collection'"> -->
+<!-- <div *ngIf=""> -->
+<!-- <app-collection-page></app-collection-page> -->
+<!-- </div> -->
+
+<div *ngIf="router.url === '/login'">
+    <div class="main-page">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<div *ngIf="router.url !== '/login'">
+    <div class="main-page">
+        <app-nav-bar></app-nav-bar>
+        <app-nav-link-bar></app-nav-link-bar>
+        <div class="page_content">
+            <router-outlet></router-outlet>
+        </div>
+        <app-footer></app-footer>
+    </div>
+</div>

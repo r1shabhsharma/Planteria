@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body {
+  margin: 0;
+  background-color: rgb(250, 250, 250);
+}
+
+
+.carousal ol {
+  display: none;
+}
+
+.flickity-button {
+  background: #333;
+}
+
+.flickity-button:hover {
+  background: #333;
+}
+
+.flickity-prev-next-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -50px;
+}
+
+.flickity-prev-next-button.next {
+  right: -50px;
+}
